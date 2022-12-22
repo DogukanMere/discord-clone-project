@@ -31,7 +31,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       primary: ['Noto Sans Display', 'sans-serif'],
-      secondary: ['Anton', 'sans-serif'],
+      secondary: ['Passion One', 'cursive'],
     },
   },
   plugins: [],
