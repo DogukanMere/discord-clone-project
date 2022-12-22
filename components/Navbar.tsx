@@ -17,6 +17,7 @@ const Navbar = (props: Props) => {
       {/* Nav Items */}
       <div className='hidden lg:inline-grid lg:col-span-3 text-[1rem]'>
         <ul className='flex space-x-10 font-medium'>
+          {/* Menu items */}
           <li><Link href='/'>Download</Link></li>
           <li><Link href='/'>Nitro</Link></li>
           <li><Link href='/'>Discover</Link></li>
