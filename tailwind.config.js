@@ -24,10 +24,10 @@ module.exports = {
     },
     colors: {
       white: '#fff',
+      contentGray: '#f6f6f6',
       primary: '#23272a',
       secondary: '#5865f2',
       hero: '#404eed',
-      gray: '#f6f6f6',
     },
     extend: {},
     fontFamily: {

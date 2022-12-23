@@ -1,15 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 
-type Props = {};
+type Props = {
+  imgsrc: string;
+  h2: string;
+  p: string;
+  order: number;
+};
 
 const ContentSection = (props: Props) => {
   return (
-    <div className='w-full bg-white flex justify-center'>
+    <div className={`w-full flex justify-center`}>
       {/* Flex Container */}
-      <div className='max-w-[1180px] px-[24px] md:px-[40px] py-[56px] md:py-[80px] lg:py-[120px] flex flex-col justify-center items-center md:flex-row md:space-x-4 md:space-x-[4rem]'>
+      <div className='max-w-[1180px] px-[24px] md:px-[40px] py-[56px] md:py-[80px] lg:py-[120px] flex flex-col justify-center items-center md:flex-row md:space-x-[4rem]'>
         {/* First Container */}
-        <div className='flex-1 md:flex-[1.5] mt-[24px]'>
+        <div
+          className={`flex md:order-${props.order} flex-1 md:flex-[1.5] mt-[24px]`}
+        >
           <Image
             src={'/img/content1.svg'}
             alt='content image'
@@ -18,14 +25,12 @@ const ContentSection = (props: Props) => {
           />
         </div>
         {/* Second Container */}
-        <div className='flex-1 mt-[20px] px-0 '>
+        <div className={`flex flex-col flex-1 md:order-2 mt-[20px] px-0`}>
           <h2 className='leading-[120%] font-bold text-primary md:text-[48px]'>
-            Create an invite-only place where you belong
+            {props.h2}
           </h2>
           <p className='content-p font-light text-primary mt-[24px] leading-[1.625]'>
-            Discord servers are organized into topic-based channels where you
-            can collaborate, share, and just talk about your day without
-            clogging up a group chat.
+            {props.p}
           </p>
         </div>
       </div>
