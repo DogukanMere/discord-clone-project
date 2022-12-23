@@ -11,10 +11,10 @@ const Header = (props: Props) => {
       <Navbar />
       {/* Text + Button */}
       <div className='w-full z-[5] px-[24px] md:px-[40px] py-[56px] md:py-[80px] text-white w-[98%] md:w-[70%] lg:w-full lg:flex lg:flex-col lg:text-center lg:max-w-[780px] lg:m-auto'>
-        <h1 className='font-bold font-secondary text-[48.25px] uppercase leading-[95%] tracking-[0.1rem] md:text-[4.4rem]'>
+        <h1 className='font-bold font-secondary uppercase leading-[95%] tracking-[0.1rem]'>
           Imagine a place...
         </h1>
-        <p className='z-[7] mt-[24px] md:mt-[40px] font-light mb-[8px] lg:text-[20px]'>
+        <p className='z-[7] mt-[24px] md:mt-[40px] font-light mb-[8px] hero-p'>
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community. Where just you and a handful of friends can
           spend time together. A place that makes it easy to talk every day and
@@ -41,12 +41,12 @@ const Header = (props: Props) => {
         <img
           src='/img/hero1.svg'
           alt='hero image'
-          className='relative z-20 block md:hidden lg:block w-full max-w-[880px] z-10 ml-[-80px] lg:left-[50%] lg:h-auto lg:w-auto lg:bottom-0 lg:ml-[-1030px] lg:absolute lg:transform-none lg:max-w-none'
+          className='relative max-w-[609px] z-20 block md:hidden lg:block w-full max-w-[880px] z-10 ml-[-80px] lg:left-[50%] lg:h-auto lg:w-auto lg:bottom-0 lg:ml-[-1030px] lg:absolute lg:transform-none lg:max-w-none'
         />
         <img
           src='/img/hero2.svg'
           alt='hero image'
-          className='absolute z-20 bottom-0 hidden md:block md:left-[50%] md:ml-[-70px] lg:ml-[370px]'
+          className='absolute max-w-[615px] z-20 bottom-0 hidden md:block md:left-[50%] md:ml-[-70px] lg:ml-[370px]'
         />
         <img
           src='/img/hero3.svg'

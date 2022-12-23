@@ -47,18 +47,15 @@ const Navbar = (props: Props) => {
           </li>
         </ul>
       </div>
-      {/* Empty Span */}
-      <div className='hidden lg:inline-grid lg:col-span-1 justify-end'>
+      {/* Hamburger */}
+      <div className='flex items-center justify-end space-x-4'>
         <a
           href='/'
           className='px-[1rem] py-[7px] rounded-full text-primary bg-white text-[14px] w-fit'
         >
           Login
         </a>
-      </div>
-      {/* Hamburger */}
-      <div className='inline-grid lg:hidden justify-end justify-end'>
-        <GiHamburgerMenu className='w-[40px] h-[40px] p-1' />
+        <GiHamburgerMenu className='inline-flex w-[40px] h-[40px] p-1 lg:hidden ' />
       </div>
     </nav>
   );
