@@ -42,8 +42,8 @@ const ContentLast = (props: Props) => {
           Ready to start your journey?
         </h4>
         <a
-          href='/'
-          className='bg-secondary flex md:w-fit md:mx-auto items-center justify-center w-full text-white text-[20px] rounded-full px-[32px] py-[16px] shadow-md'
+          href='#'
+          className='bg-secondary flex md:w-fit md:mx-auto items-center justify-center w-full text-white text-[20px] rounded-full px-[32px] py-[16px] shadow-md hover:shadow-xl hover:bg-[#6874f3] transition-all duration-300'
         >
           <MdOutlineFileDownload className='text-[28px] mr-2 inline-block' />
           Download from Google Play

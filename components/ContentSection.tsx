@@ -12,12 +12,12 @@ type Props = {
 const ContentSection = ({ imgsrc, h2, p, isOrdered, isGray }: Props) => {
   return (
     <div
-      className={`w-full flex justify-center ${
+      className={`notShow w-full flex justify-center ${
         isGray ? 'bg-contentGray' : 'bg-white'
       }`}
     >
       {/* Flex Container */}
-      <div className='max-w-[1180px] px-[24px] md:px-[40px] py-[56px] md:py-[80px] lg:py-[120px] flex flex-col justify-center items-center md:flex-row gap-0 md:gap-[6rem]'>
+      <div className='max-w-[1180px] px-[24px] md:px-[40px] py-[56px] md:py-[80px] lg:py-[160px] flex flex-col justify-center items-center md:flex-row gap-0 md:gap-[6rem]'>
         {/* First Container */}
         <div
           className={`flex ${

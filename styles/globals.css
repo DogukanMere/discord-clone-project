@@ -22,3 +22,24 @@ h2 {
 .content-p {
   font-size: clamp(16px, 2vw, 20px);
 }
+
+select {
+  background: transparent;
+}
+
+/* Fade in */
+.notShow {
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 500ms;
+}
+
+.showContent {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  .notShow {
+    transition: none;
+  }
+}

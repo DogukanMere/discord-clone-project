@@ -1,11 +1,24 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import ContentSection from './ContentSection';
 import ContentLast from './ContentLast';
+import Footer from './Footer';
 
 type Props = {};
 
 const Main = (props: Props) => {
+  useEffect(() => {
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('showContent');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.notShow');
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, []);
   return (
     <>
       <ContentSection
@@ -17,6 +30,7 @@ const Main = (props: Props) => {
         isOrdered={true}
         isGray={false}
       />
+
       <ContentSection
         imgsrc='/img/content2.svg'
         h2='Where hanging out is easy'
@@ -24,6 +38,7 @@ const Main = (props: Props) => {
         isOrdered={false}
         isGray={true}
       />
+
       <ContentSection
         imgsrc='/img/content3.svg'
         h2='From few to a fandom'
@@ -34,6 +49,8 @@ const Main = (props: Props) => {
 
       {/* Content Bottom */}
       <ContentLast />
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
