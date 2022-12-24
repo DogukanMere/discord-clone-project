@@ -10,7 +10,7 @@ const Header = (props: Props) => {
       {/* Navbar */}
       <Navbar />
       {/* Text + Button */}
-      <div className='w-full z-[5] px-[24px] md:px-[40px] py-[56px] md:py-[80px] text-white w-[98%] md:w-[70%] lg:w-full lg:flex lg:flex-col lg:text-center lg:max-w-[780px] lg:m-auto'>
+      <div className='w-full z-[5] px-[24px] md:px-[40px] py-[56px] md:py-[80px] text-white md:w-[70%] lg:w-full lg:flex lg:flex-col lg:text-center lg:max-w-[780px] lg:m-auto'>
         <h1 className='font-bold font-secondary uppercase leading-[95%] tracking-[0.1rem]'>
           Imagine a place...
         </h1>
@@ -23,14 +23,14 @@ const Header = (props: Props) => {
         <div className='z-[7] flex md:flex-col flex-wrap justify-start lg:justify-center lg:flex-row'>
           <a
             href='/'
-            className='flex items-center w-fit justify-center text-primary text-[18px] font-medium items-center space-x-2 mt-[24px] mr-[24px] px-[32px] py-[16px] bg-white rounded-full'
+            className='flex items-center w-fit justify-center text-primary text-[18px] font-medium space-x-2 mt-[24px] mr-[24px] px-[32px] py-[16px] bg-white rounded-full shadow-md'
           >
             <MdOutlineFileDownload className='text-[28px] mr-2' />
             Download for Mac
           </a>
           <a
             href='/'
-            className='flex md:block items-center w-fit justify-center text-white text-[18px] font-medium items-center space-x-2 mt-[24px] px-[32px] py-[16px] bg-primary rounded-full'
+            className='flex md:block items-center w-fit justify-center text-white text-[18px] font-medium space-x-2 mt-[24px] px-[32px] py-[16px] bg-primary rounded-full shadow-md'
           >
             Open Discord in your browser
           </a>
@@ -41,7 +41,7 @@ const Header = (props: Props) => {
         <img
           src='/img/hero1.svg'
           alt='hero image'
-          className='relative max-w-[609px] z-20 block md:hidden lg:block w-full max-w-[880px] z-10 ml-[-80px] lg:left-[50%] lg:h-auto lg:w-auto lg:bottom-0 lg:ml-[-1030px] lg:absolute lg:transform-none lg:max-w-none'
+          className='relative z-20 block md:hidden lg:block w-full max-w-[880px] ml-[-80px] lg:left-[50%] lg:h-auto lg:w-auto lg:bottom-0 lg:ml-[-1030px] lg:absolute lg:transform-none lg:max-w-none'
         />
         <img
           src='/img/hero2.svg'

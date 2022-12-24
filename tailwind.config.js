@@ -33,6 +33,7 @@ module.exports = {
     fontFamily: {
       primary: ['Noto Sans Display', 'sans-serif'],
       secondary: ['Passion One', 'cursive'],
+      lato: ['Lato', 'sans-serif'],
     },
   },
   plugins: [],
